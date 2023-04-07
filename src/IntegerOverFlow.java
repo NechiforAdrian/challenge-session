@@ -9,7 +9,7 @@ public class IntegerOverFlow {
 
         if (result > Integer.MAX_VALUE) {
             System.out.println("The result is too bigger for a integer try use double, or... :");
-        }else {
+        } else {
             System.out.println("Result :" + result);
         }
     }
