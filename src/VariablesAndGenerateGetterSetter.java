@@ -1,5 +1,5 @@
 
-public class User {
+public class VariablesAndGenerateGetterSetter {
 
     private String firstName;
     private String lastName;
