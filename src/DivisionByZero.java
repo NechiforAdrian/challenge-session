@@ -12,12 +12,11 @@ public class DivisionByZero {
         int number2 = numberDivide.nextInt();
 
         int result = number1 / number2;
-        System.out.println("Result = " + result);
 
         if (number1 == 0) {
             System.out.println("Cannot divide by zero!");
         } else {
-            System.out.println("Nothing");
+            System.out.println("Result = " + result);
         }
 
         numberDivide.close();

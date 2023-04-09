@@ -16,8 +16,11 @@ public class FloatingPointPrecision {
         float number3 = scanner.nextFloat();
 
         float average = number1 + number2 + number3 / 3;
-        System.out.println("The average of this three floating numbers is = " + average);
 
+        if (average > Float.MAX_VALUE) {
+            System.out.println("You exceed the max value of float.");
+        } else
+            System.out.println("The average of this three floating numbers is = " + average);
         scanner.close();
 
         //Second Mode
@@ -26,10 +29,11 @@ public class FloatingPointPrecision {
         float number6 = 1f;
         float sum = number4 + number5 + number6 / 3;
 
-        if (average > Float.MAX_VALUE) {
+        if (sum > Float.MAX_VALUE) {
             System.out.println("You exceed the max value of float.");
-        } else
-            System.out.println("The average is = " + sum);
+        } else {
+            System.out.println("The sum is = " + sum);
+        }
     }
 }
 
